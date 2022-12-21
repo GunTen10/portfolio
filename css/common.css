@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  word-break: keep-all;
+  max-width: 100%;
+  background-color: #fff;
+  height: 100%;
+}
+
+section {
+  padding: 70px 0;
+  border-bottom: 1px solid #000;
+}
+
+section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
