@@ -64,7 +64,7 @@ $(function () {
     }
   });
 
-  // projects 섹션 내 슬릭 슬라이더
+  // projects 섹션 내 슬라이드 - 슬릭 슬라이더
   $('.projSlide').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -89,4 +89,8 @@ $(function () {
     ]
   });
 
+  $('.box02 .link a:first-child').on('click',function(e){
+    e.preventDefault();
+    window.open(this.href, 'https://github.com/GunTen10/proj2', 'width=412, height=915');  //삼성 갤럭시 S20 울트라 크기
+  })
 });
