@@ -1,19 +1,39 @@
 $(function () {
+  // navBar ON/OFF
+  // navBar ON
+  $('.mobile_navBtn').click(function () {
+    $('.mobile_nav').animate({ right: 0 }, 300);
+    $('.mobile_nav').show();
+    $('.dark_nav').show();
+  });
+  // // navBar OFF
+  $('.mobile_nav .close, .dark_nav').click(function () {
+    $('.dark_nav').hide();
+    $('.mobile_nav').hide();
+    $('.mobile_nav').animate({ right: -300 }, 300);
+  });
+
   // Header nav바 메뉴 클릭 시, 해당 영역 이동
+  var introScroll = $('#home').offset().top - 70;
+  var aboutScroll = $('#about').offset().top - 70;
+  var skillScroll = $('#skills').offset().top - 70;
+  var projectScroll = $('#projects').offset().top - 70;
+  var contactScroll = $('#contact').offset().top - 70;
+
   $('.moveBtn01').click(function () {
-    $('html, body').animate({ scrollTop: $('#intro').offset().top - 70 }, 500);
+    $('html, body').animate({ scrollTop: introScroll }, 500);
   });
   $('.moveBtn02').click(function () {
-    $('html, body').animate({ scrollTop: $('#about').offset().top - 70 }, 500);
+    $('html, body').animate({ scrollTop: aboutScroll }, 500);
   });
   $('.moveBtn03').click(function () {
-    $('html, body').animate({ scrollTop: $('#skills').offset().top - 70 }, 500);
+    $('html, body').animate({ scrollTop: skillScroll }, 500);
   });
   $('.moveBtn04').click(function () {
-    $('html, body').animate({ scrollTop: $('#projects').offset().top - 70 }, 500);
+    $('html, body').animate({ scrollTop: projectScroll }, 500);
   });
   $('.moveBtn05').click(function () {
-    $('html, body').animate({ scrollTop: $('#contact').offset().top - 70 }, 500);
+    $('html, body').animate({ scrollTop: contactScroll }, 500);
   });
 
   // 해당 영역 이동 시, Header nav바 메뉴 색상 변경
@@ -89,7 +109,7 @@ $(function () {
     ]
   });
 
-  $('.box02 .link a:first-child').on('click',function(e){
+  $('.box02 .link a:first-child').on('click', function (e) {
     e.preventDefault();
     window.open(this.href, 'https://github.com/GunTen10/proj2', 'width=412, height=915');  //삼성 갤럭시 S20 울트라 크기
   })

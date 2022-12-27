@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
@@ -22,26 +23,50 @@
   <!-- header -->
   <header>
     <div class="wrap">
-      <h2 class="logo">Gun10<span>'s Portfolio</span></h2>
-      <nav>
+      <h2 class="logo">GEUNYEOL<span>'s Portfolio</span></h2>
+      <nav class="pc_nav">
         <ul>
-          <li><a href="#" class="moveBtn01">Intro</a></li>
+          <li><a href="#" class="moveBtn01">Home</a></li>
           <li><a href="#" class="moveBtn02">About</a></li>
           <li><a href="#" class="moveBtn03">Skills</a></li>
           <li><a href="#" class="moveBtn04">Projects</a></li>
           <li><a href="#" class="moveBtn05">Contact</a></li>
         </ul>
       </nav>
+      <!-- 모바일 전용 메뉴 버튼 -->
+      <div class="mobile_navBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
   </header>
+  <!-- navBar On시 배경 색 투명검정 -->
+  <div class="dark_nav"></div>
+  <!-- 모바일 전용 navBar ON시 -->
+  <div class="mobile_nav">
+    <div class="wrap">
+      <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="mobile_menu">
+        <ul>
+          <li><a href="#" class="moveBtn01">Home</a></li>
+          <li><a href="#" class="moveBtn02">About</a></li>
+          <li><a href="#" class="moveBtn03">Skills</a></li>
+          <li><a href="#" class="moveBtn04">Projects</a></li>
+          <li><a href="#" class="moveBtn05">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <!-- main -->
   <main>
     <!-- main_home -->
-    <section id="intro">
+    <section id="home">
       <div class="wrap">
         <div class="text">
           <p class="top">장근열 포트폴리오</p>
-          <p class="bottom">안녕하세요.<br><span>프론트엔드 개발자 장근열</span>입니다.<br><br>누구나 사용하기 쉽고 편리한 서비스, 사용자를 위한 서비스를 만들 수 있는 개발자가
+          <p class="bottom">안녕하세요.<br><span>프론트엔드 개발자 장근열</span>입니다.<br><br>누구나 사용하기 쉽고 편리한 서비스, 사용자를 위한 서비스를 만들 수 있는
+            개발자가
             되겠습니다. </p>
         </div>
       </div>
@@ -92,7 +117,7 @@
               <i class="fa-solid fa-graduation-cap"></i>
               <div class="text">
                 <p class="top">최종학력</p>
-                <p class="bottom">상지대학교 졸업</p>
+                <p class="bottom">상지대학교 졸업 <br>(정보통신공학과)</p>
               </div>
             </li>
           </ul>
@@ -346,16 +371,16 @@
               </a>
             </li>
             <li>
-              <a href="https://open.kakao.com/o/sTpfmUoe" target="_blank">
-                <div class="img"></div>
-                <p class="left">카카오톡</p>
-              </a>
-            </li>
-            <li>
               <a href="https://github.com/GunTen10" target="_blank">
                 <i class="fa-brands fa-github"></i>
                 <p class="left">Github</p>
                 <p class="right">https://github.com/GunTen10</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://open.kakao.com/o/sTpfmUoe" target="_blank">
+                <div class="img_kakao"></div>
+                <p class="left">카카오톡</p>
               </a>
             </li>
           </ul>
