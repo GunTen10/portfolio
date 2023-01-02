@@ -109,8 +109,12 @@ $(function () {
     ]
   });
 
-  $('.box02 .link a:first-child').on('click', function (e) {
+  $('.box03 .link a:first-child').on('click', function (e) {
     e.preventDefault();
-    window.open(this.href, 'https://github.com/GunTen10/proj2', 'width=412, height=915');  //삼성 갤럭시 S20 울트라 크기
+    window.open(this.href, 'https://gunten10.github.io/sns_sass', 'width=390, height=844');  // 아이폰 12 Pro 크기
+  })
+  $('.box04 .link a:first-child').on('click', function (e) {
+    e.preventDefault();
+    window.open(this.href, 'https://github.com/GunTen10/proj2', 'width=390, height=844');  // 아이폰 12 Pro 크기
   })
 });

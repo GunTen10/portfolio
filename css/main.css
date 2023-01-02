@@ -243,6 +243,7 @@ main {
 #skills ul li:nth-child(9) i {
   color: #e84d31;
 }
+
 #skills p {
   text-align: center;
 }
@@ -251,9 +252,9 @@ main {
   font-weight: bold;
   font-size: 20px;
 }
-#skills p.bottom {
+/* #skills p.bottom {
   font-family: 'Pretendard-Regular';
-}
+} */
 
 /* main_projects */
 #projects {
@@ -290,17 +291,39 @@ main {
   border: 3px solid #1C3879;
 }
 #projects .box01 .img {
-  background: url('../img/proj1.png') no-repeat center center / cover;
+  background: url('../img/proj01.png') no-repeat center center / cover;
 }
 #projects .box02 .img {
-  background: url('../img/proj2.png') no-repeat center center / contain;
+  background: url('../img/proj02.png') no-repeat center center / cover;
 }
 #projects .box03 .img {
-  background: url('../img/proj3.png') no-repeat center center / cover;
+  background: url('../img/proj03.png') no-repeat center center / contain;
 }
 #projects .box04 .img {
-  background: url('../img/proj4.png') no-repeat center center / cover;
+  background: url('../img/proj04.png') no-repeat center center / contain;
 }
+#projects .box05 .img {
+  background: url('../img/proj05.png') no-repeat center center / cover;
+}
+#projects .box06 .img {
+  background: url('../img/proj06.png') no-repeat center center / cover;
+}
+#projects .box07 .img {
+  background: url('../img/proj07.png') no-repeat center center / cover;
+}
+#projects .box08 .img {
+  background: url('../img/proj08.png') no-repeat center center / cover;
+}
+#projects .box09 .img {
+  background: url('../img/proj09.png') no-repeat center center / cover;
+}
+#projects .box10 .img {
+  background: url('../img/proj10.png') no-repeat center center / cover;
+}
+#projects .box11 .img {
+  background: url('../img/proj11.png') no-repeat center center / cover;
+}
+
 #projects .text {
   width: 100%;
 }
