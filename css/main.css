@@ -231,14 +231,14 @@ main {
 #skills ul li:nth-child(3) i {
   color: #efd81d;
 }
-#skills ul li:nth-child(4) img {
-  width: 200px;
-}
 #skills ul li:nth-child(5) i {
   color: #5ed3f3;
 }
 #skills ul li:nth-child(7) i {
   color: #7532fa;
+}
+#skills ul li:nth-child(8) i {
+  color: #c66394;
 }
 #skills ul li:nth-child(9) i {
   color: #e84d31;
