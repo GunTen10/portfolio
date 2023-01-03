@@ -14,23 +14,48 @@ $(function () {
   });
 
   // Header nav바 메뉴 클릭 시, 해당 영역 이동
-  var introScroll = $('#home').offset().top - 70;
-  var skillScroll = $('#skills').offset().top - 70;
-  var projectScroll = $('#projects').offset().top - 70;
-  var contactScroll = $('#contact').offset().top - 70;
+  $(window).resize(function () {
+    if (window.innerWidth > 606) { // 다바이스 크기가 606이상일 때 
+      var introScroll = $('#home').offset().top - 70;
+      var skillScroll = $('#skills').offset().top - 70;
+      var projectScroll = $('#projects').offset().top - 70;
+      var contactScroll = $('#contact').offset().top - 70;
 
-  $('.moveBtn01').click(function () {
-    $('html, body').animate({ scrollTop: introScroll }, 500);
-  });
-  $('.moveBtn02').click(function () {
-    $('html, body').animate({ scrollTop: skillScroll }, 500);
-  });
-  $('.moveBtn03').click(function () {
-    $('html, body').animate({ scrollTop: projectScroll }, 500);
-  });
-  $('.moveBtn04').click(function () {
-    $('html, body').animate({ scrollTop: contactScroll }, 500);
-  });
+      $('.moveBtn01').click(function () {
+        $('html, body').animate({ scrollTop: introScroll }, 500);
+      });
+      $('.moveBtn02').click(function () {
+        $('html, body').animate({ scrollTop: skillScroll }, 500);
+      });
+      $('.moveBtn03').click(function () {
+        $('html, body').animate({ scrollTop: projectScroll }, 500);
+      });
+      $('.moveBtn04').click(function () {
+        $('html, body').animate({ scrollTop: contactScroll }, 500);
+      });
+
+    } else { // 다바이스 크기가 606 미만일 때
+      var introTop = $('#home').offset().top - 55;
+      var skillTop = $('#skills').offset().top - 55;
+      var projectTop = $('#projects').offset().top - 55;
+      var contactTop = $('#contact').offset().top - 55;
+
+      $('.moveBtn01').click(function () {
+        $('html, body').animate({ scrollTop: introTop }, 500);
+      });
+      $('.moveBtn02').click(function () {
+        $('html, body').animate({ scrollTop: skillTop }, 500);
+      });
+      $('.moveBtn03').click(function () {
+        $('html, body').animate({ scrollTop: projectTop }, 500);
+      });
+      $('.moveBtn04').click(function () {
+        $('html, body').animate({ scrollTop: contactTop }, 500);
+      });
+
+    }
+
+  }).resize();
 
   // 해당 영역 이동 시, Header nav바 메뉴 색상 변경
   $(window).scroll(function () {
