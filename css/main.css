@@ -65,6 +65,7 @@ header .mobile_navBtn {
 header .mobile_navBtn i {
   font-size: 30px;
   transition: all .3s;
+  cursor: pointer;
 }
 header .mobile_navBtn i:hover {
   color: #339af0;
@@ -107,6 +108,7 @@ header .mobile_navBtn i:hover {
   right: 10%;
   line-height: 70px;
   transition: all .3s;
+  cursor: pointer;
 }
 .mobile_nav .close i:hover {
   color: #339af0;

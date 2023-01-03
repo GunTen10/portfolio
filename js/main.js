@@ -15,7 +15,6 @@ $(function () {
 
   // Header nav바 메뉴 클릭 시, 해당 영역 이동
   var introScroll = $('#home').offset().top - 70;
-  var aboutScroll = $('#about').offset().top - 70;
   var skillScroll = $('#skills').offset().top - 70;
   var projectScroll = $('#projects').offset().top - 70;
   var contactScroll = $('#contact').offset().top - 70;
@@ -24,63 +23,48 @@ $(function () {
     $('html, body').animate({ scrollTop: introScroll }, 500);
   });
   $('.moveBtn02').click(function () {
-    $('html, body').animate({ scrollTop: aboutScroll }, 500);
-  });
-  $('.moveBtn03').click(function () {
     $('html, body').animate({ scrollTop: skillScroll }, 500);
   });
-  $('.moveBtn04').click(function () {
+  $('.moveBtn03').click(function () {
     $('html, body').animate({ scrollTop: projectScroll }, 500);
   });
-  $('.moveBtn05').click(function () {
+  $('.moveBtn04').click(function () {
     $('html, body').animate({ scrollTop: contactScroll }, 500);
   });
 
   // 해당 영역 이동 시, Header nav바 메뉴 색상 변경
   $(window).scroll(function () {
     var winScroll = $(this).scrollTop();
-    var aboutScroll = $('#about').offset().top - 70;
     var skillScroll = $('#skills').offset().top - 70;
     var projectScroll = $('#projects').offset().top - 70;
     var contactScroll = $('#contact').offset().top - 70;
     var footerScroll = $('footer').offset().top - 30;
 
-    if (winScroll < aboutScroll) {
+    if (winScroll < skillScroll) {
       $('.moveBtn01').addClass('on');
       $('.moveBtn02').removeClass('on');
       $('.moveBtn03').removeClass('on');
       $('.moveBtn04').removeClass('on');
-      $('.moveBtn05').removeClass('on');
-    } else if (winScroll < skillScroll) {
+    } else if (winScroll < projectScroll) {
       $('.moveBtn01').removeClass('on');
       $('.moveBtn02').addClass('on');
       $('.moveBtn03').removeClass('on');
       $('.moveBtn04').removeClass('on');
-      $('.moveBtn05').removeClass('on');
-    } else if (winScroll < projectScroll) {
+    } else if (winScroll < contactScroll) {
       $('.moveBtn01').removeClass('on');
       $('.moveBtn02').removeClass('on');
       $('.moveBtn03').addClass('on');
       $('.moveBtn04').removeClass('on');
-      $('.moveBtn05').removeClass('on');
-    } else if (winScroll < contactScroll) {
-      $('.moveBtn01').removeClass('on');
-      $('.moveBtn02').removeClass('on');
-      $('.moveBtn03').removeClass('on');
-      $('.moveBtn04').addClass('on');
-      $('.moveBtn05').removeClass('on');
     } else if (winScroll < footerScroll) {
       $('.moveBtn01').removeClass('on');
       $('.moveBtn02').removeClass('on');
       $('.moveBtn03').removeClass('on');
-      $('.moveBtn04').removeClass('on');
-      $('.moveBtn05').addClass('on');
+      $('.moveBtn04').addClass('on');
     } else {
       $('.moveBtn01').removeClass('on');
       $('.moveBtn02').removeClass('on');
       $('.moveBtn03').removeClass('on');
       $('.moveBtn04').removeClass('on');
-      $('.moveBtn05').removeClass('on');
     }
   });
 
